@@ -1,0 +1,24 @@
+//@extend-elements
+//original selectors
+//h1, h2, h3, h4, h5, h6
+%extend_1 {
+	font-family: $font_5, $font_1, $font_2, $font_3, $font_4;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+//original selectors
+//.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary
+%extend_2 {
+	color: $white;
+	background-color: $yellow-basic;
+	border-color: $yellow-basic ;
+}
+
+//original selectors
+//.btn-xl:hover, .btn-xl:focus, .btn-xl:active, .btn-xl.active, .open .dropdown-toggle.btn-xl
+%extend_3 {
+	color: $white;
+	background-color: $yellow-basic;
+	border-color: $yellow-basic ;
+}

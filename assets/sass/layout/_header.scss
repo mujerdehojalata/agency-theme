@@ -1,0 +1,136 @@
+.navbar-default {
+	background-color: $black;
+	border-color: transparent;
+	.navbar-brand {
+		color: $yellow-light;
+		font-family: $font_7, $font_1, $font_2, $font_3, $font_8;
+		&:hover {
+			color: $yellow-basic;
+		}
+		&:focus {
+			color: $yellow-basic;
+		}
+		&:active {
+			color: $yellow-basic;
+		}
+		&.active {
+			color: $yellow-basic;
+		}
+	}
+	.navbar-collapse {
+		border-color: $white;
+	}
+	.navbar-toggle {
+		background-color: $yellow-light;
+		border-color: $yellow-light;
+		.icon-bar {
+			background-color: $white;
+		}
+		&:hover {
+			background-color: $yellow-light;
+		}
+		&:focus {
+			background-color: $yellow-light;
+		}
+	}
+	.nav li a {
+		font-family: $font_5, $font_1, $font_2, $font_3, $font_4;
+		text-transform: uppercase;
+		font-weight: 400;
+		letter-spacing: 1px;
+		color: $white;
+		&:hover {
+			color: $yellow-light;
+			outline: none;
+		}
+		&:focus {
+			color: $yellow-light;
+			outline: none;
+		}
+	}
+	.navbar-nav > .active > a {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 0;
+		color: $white;
+		background-color: $yellow-light;
+		&:hover {
+			color: $white;
+			background-color: $yellow-basic;
+		}
+		&:focus {
+			color: $white;
+			background-color: $yellow-basic;
+		}
+	}
+}
+
+@media(min-width: 768px) {
+	.navbar-default {
+		background-color: $black;
+		padding: 25px 0;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: padding 0.3s;
+		border: none;
+		.navbar-brand {
+			font-size: 2em;
+			//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+			transition: all 0.3s;
+		}
+		&.navbar-shrink {
+			background-color: $black;
+			padding: 10px 0;
+			.navbar-brand {
+				font-size: 1.5em;
+			}
+		}
+		.navbar-nav > .active > a {
+			border-radius: 3px;
+		}
+	}
+	
+	header {
+	background-image: $url_0;
+	background-repeat: none;
+	background-attachment: scroll;
+	background-position: center center;
+	background-size: cover;
+	text-align: center;
+	color: $white;
+	.intro-text {
+		padding-top: 100px;
+		padding-bottom: 50px;
+		.intro-lead-in {
+			font-family: $font_0, $font_1, $font_2, $font_3, $font_4;
+			font-size: 22px;
+			line-height: 22px;
+			margin-bottom: 25px;
+		}
+		.intro-heading {
+			font-family: $font_5, $font_1, $font_2, $font_3, $font_4;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 50px;
+			line-height: 50px;
+			margin-bottom: 25px;
+		}
+	}
+}
+	header .intro-text {
+		padding-top: 300px;
+		padding-bottom: 200px;
+		.intro-lead-in {
+			font-family: $font_0, $font_1, $font_2, $font_3, $font_4;
+			font-size: 40px;
+			line-height: 40px;
+			margin-bottom: 25px;
+		}
+		.intro-heading {
+			font-family: $font_5, $font_1, $font_2, $font_3, $font_4;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 75px;
+			line-height: 75px;
+			margin-bottom: 50px;
+		}
+	}
+}

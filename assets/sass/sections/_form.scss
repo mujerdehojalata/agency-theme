@@ -1,0 +1,72 @@
+
+section {
+	padding: 100px 0;
+	&#contact {
+		background-color: $black;
+		background-position: center;
+		background-repeat: no-repeat;
+		.section-heading {
+			color: $white;
+		}
+		.form-group {
+			input {
+				padding: 20px;
+				&.form-control {
+					height: auto;
+					margin-bottom: 25px;
+				}
+			}
+			textarea {
+				padding: 20px;
+				&.form-control {
+					height: 236px;
+				}
+			}
+		}
+		::-webkit-input-placeholder {
+			font-family: $font_5, $font_1, $font_2, $font_3, $font_4;
+			text-transform: uppercase;
+			font-weight: 700;
+			color: $lite-light-gray;
+		}
+		:-moz-placeholder {
+			font-family: $font_5, $font_1, $font_2, $font_3, $font_4;
+			text-transform: uppercase;
+			font-weight: 700;
+			color: $lite-light-gray;
+		}
+		::-moz-placeholder {
+			font-family: $font_5, $font_1, $font_2, $font_3, $font_4;
+			text-transform: uppercase;
+			font-weight: 700;
+			color: $lite-light-gray;
+		}
+		:-ms-input-placeholder {
+			font-family: $font_5, $font_1, $font_2, $font_3, $font_4;
+			text-transform: uppercase;
+			font-weight: 700;
+			color: $lite-light-gray;
+		}
+		.text-danger {
+			color: $redy;
+		}
+		.form-control:focus {
+			border-color: $yellow-light;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: none;
+		}
+	}
+	h2.section-heading {
+		font-size: 40px;
+		margin-top: 0;
+		margin-bottom: 15px;
+	}
+	h3.section-subheading {
+		font-size: 16px;
+		font-family: $font_0, $font_1, $font_2, $font_3, $font_4;
+		text-transform: none;
+		font-style: italic;
+		font-weight: 400;
+		margin-bottom: 75px;
+	}
+}
