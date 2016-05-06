@@ -1,0 +1,74 @@
+
+
+
+@media (max-width: 769px){
+    header {
+	background-image: $url_0;
+	background-repeat: none;
+	background-attachment: scroll;
+	background-position: center center;
+	background-size: cover;
+	text-align: center;
+	color: $white;
+	.intro-text {
+		padding-top: 100px;
+		padding-bottom: 50px;
+		.intro-lead-in {
+			font-family: $font_0, $font_1, $font_2, $font_3, $font_4;
+			font-size: 22px;
+			line-height: 22px;
+			margin-bottom: 25px;
+		}
+		.intro-heading {
+			font-family: $font_5, $font_1, $font_2, $font_3, $font_4;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 50px;
+			line-height: 50px;
+			margin-bottom: 25px;
+		    }
+		}
+	}
+}
+
+
+@media (min-width: 768px){
+	.timeline>li .timeline-panel {
+    width: 41%;
+    float: left;
+    padding: 0 20px 20px 30px;
+    text-align: right;
+	}
+}
+
+@media (min-width:768px) {
+    .timeline:before {
+        left: 50%
+    }
+    .timeline>li {
+        margin-bottom: 100px;
+        min-height: 100px
+    }
+    .timeline>li .timeline-panel {
+        width: 41%;
+        float: left;
+        padding: 0 20px 20px 30px;
+        text-align: right
+    }
+    .timeline>li .timeline-image {
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        margin-left: -50px
+    }
+    .timeline>li .timeline-image h4 {
+        font-size: 13px;
+        margin-top: 16px;
+        line-height: 18px
+    }
+    .timeline>li.timeline-inverted>.timeline-panel {
+        float: right;
+        text-align: left;
+        padding: 0 30px 20px 20px
+    }
+}
